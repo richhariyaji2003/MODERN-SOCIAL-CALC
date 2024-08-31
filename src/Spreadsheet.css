@@ -1,0 +1,98 @@
+html,
+body,
+.spreadsheet-container {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Prevents scrolling the entire page */
+}
+
+.spreadsheet-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.toolbar-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  flex-shrink: 0; /* Ensures the toolbar does not shrink */
+}
+
+.toolbar-section {
+  display: flex;
+  gap: 15px; /* Adds spacing between buttons */
+  justify-content: center; /* Centers the buttons horizontally */
+}
+
+.toolbar-button {
+  margin-right: 10px;
+  padding: 10px 15px; /* Increased padding for larger buttons */
+  background-color: #eee;
+  border: none;
+  cursor: pointer;
+  font-size: 20px; /* Increased font size for the button text */
+}
+
+.toolbar-button i {
+  font-size: 24px; /* Increased font size for icons */
+}
+
+.toolbar-button:hover {
+  background-color: #ddd;
+}
+
+.toolbar-tabs {
+  display: flex;
+  justify-content: center; /* Centers the tabs horizontally */
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.toolbar-tabs button {
+  padding: 8px 15px;
+  background-color: #eee;
+  border: none;
+  cursor: pointer;
+  font-size: 16px; /* Font size for tab buttons */
+}
+
+.toolbar-tabs button:hover {
+  background-color: #ddd;
+}
+
+.hot-table-container {
+  flex-grow: 1; /* Allows the spreadsheet to take up remaining space */
+  overflow-y: auto; /* Enables scrolling within the spreadsheet */
+}
+
+.sheet-navigation {
+  display: flex;
+  justify-content: center; /* Centers the buttons horizontally */
+  background-color: #f9f9f9;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  flex-shrink: 0; /* Ensures the sheet navigation does not shrink */
+}
+
+.sheet-navigation button {
+  margin-right: 10px;
+  padding: 10px 15px; /* Increased padding for larger buttons */
+  background-color: #eee;
+  border: none;
+  cursor: pointer;
+  font-size: 20px; /* Increased font size for the button text */
+}
+
+.sheet-navigation button i {
+  font-size: 24px; /* Increased font size for icons */
+}
+
+.sheet-navigation button:hover {
+  background-color: #ddd;
+}

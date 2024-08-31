@@ -1,0 +1,13 @@
+/* Header.css */
+.header {
+  display: flex;
+  justify-content: center; /* Centers the logo horizontally */
+  align-items: center; /* Centers the logo vertically */
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+}
+
+.logo img {
+  width: 250px;
+  height: auto;
+}
